@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int A, B; //declaração de váriaveis globais
 

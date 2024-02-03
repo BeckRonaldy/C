@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 //operações e definições básicas para escrever código em C
 
