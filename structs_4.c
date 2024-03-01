@@ -26,9 +26,11 @@ int main(){
     fgets(agenda.contatos[0].email, 100, stdin);
 
     printf("\n\n===== Dados do contato =====\n");
-    printf("Nome: %s\n", agenda.contatos[0].nome);
-    printf("Telefone: %s\n", agenda.contatos[0].telefone);
-    printf("E-mail: %s\n", agenda.contatos[0].email);
+    printf("Nome: %s\n", strtok(agenda.contatos[0].nome, "\n"));
+    printf("Telefone: %s\n", strtok(agenda.contatos[0].telefone, "\n"));
+    printf("E-mail: %s\n", strtok(agenda.contatos[0].email, "\n"));
+
+    //strtok(variavel, "caracter") -> imprime sem o caracter especificado
 
     return 0;
 }
