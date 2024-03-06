@@ -1,15 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
+
+//Malloc - alocação de memória
 
 int main(){
-    int num[3];
-    num[0] = 55;
-    num[1] = 33;
-    num[2] = 44;
 
-    printf("A variavel 'num[0]' vale %d e ocupa %ld bytes em memoria\n", num[0], sizeof(num[0]));
-    printf("A variavel 'num[1]' vale %d e ocupa %ld bytes em memoria\n", num[1], sizeof(num[1]));
-    printf("A variavel 'num[2]' vale %d e ocupa %ld bytes em memoria\n", num[2], sizeof(num[2]));
-    printf("A variavel 'num' ocupa %ld bytes em memoria\n", sizeof(num));
+    int qtd, tam, *p;
+
+    printf("Informe a quantidade de elementos do vetor: ");
+    scanf("%d", &qtd);
+
+    tam = (qtd * sizeof(int)); // 3x4 == 12 bytes
+    p = (int*)malloc(tam); //alocando a memória
+
+    if(p){
+        for(int i=0; i<qtd; i++){
+            printf("Informe o valor para a posicao %d do vetor: ", i);
+            scanf("%d", &p[i]);
+        }
+
+        for(int i=0; i<qtd; i++){
+            printf("No vetor 'p[%d]' esta o valor: %d\n", i, p[i]);
+        }
+
+        printf("A variavel 'p' ocupa %d bytes em memoria.\n\n", tam);
+    } else{
+        printf("Erro, memoria insuficiente!!");
+    }
+    
+    free(p); //liberando a memória (desalocar)
+    p = NULL; //medida de segurança
 
     return 0;
 }
