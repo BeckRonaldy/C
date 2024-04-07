@@ -1,9 +1,10 @@
-#include <stdio.h>
 /*
-* #define PI 3.41567 -> Constante
-* ifdef
-* caso a constante exista ele irá executar uma ação
+    #define PI 3.41567 -> Constante
+    ifdef
+    caso a constante exista ele irá executar uma ação
 */
+
+#include <stdio.h>
 
 #ifndef PI
     #define PI 3.41567

@@ -1,12 +1,12 @@
-#include <stdio.h>
-
 /*
-* Recursividade
-* Capacidade da função chamar a si mesma
-*
-* Fibonacci -> 1 1 2 3 5 8 13 21 34 55 ...
-* Soma do numero dos dois numeros anteriores
+    Recursividade
+    Capacidade da função chamar a si mesma
+
+    Fibonacci -> 1 1 2 3 5 8 13 21 34 55 ...
+    Soma do numero dos dois numeros anteriores
 */
+
+#include <stdio.h>
 
 int fib(int n){
     if(n == 0){

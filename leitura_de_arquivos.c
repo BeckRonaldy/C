@@ -1,7 +1,8 @@
+//FILE = tipo arquivo
+
 #include <stdio.h>
 #include <locale.h>
 #include <windows.h>
-//FILE = tipo arquivo
 
 int main(){
     UINT CPAGE_UTF8 = 65001;

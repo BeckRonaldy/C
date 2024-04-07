@@ -1,16 +1,10 @@
-#include <stdio.h>
 
-//operações e definições básicas para escrever código em C
-
-int main(){
-
-    return 0;
-}
-
-    /*
+/*
+    operações e definições básicas para escrever código em C
+    
     impressão simples:
     printf("Palavra");
-    
+
     impressão de váriável:
     int variavel = 0;
     printf("\n%i\n", variavel);
@@ -20,14 +14,14 @@ int main(){
     float numfloat;
     char caracter;
     double numdouble;
-    
+
     tipos de variaveis:
     1 - char  (armazena caracteres)
     2 - int (armazena numeros positivos e negativos)
     3 - float (numeros flutuantes ex: 10,50)
     4 - void (vazio, sem tipo)
     5 - double (ponto flutuante duplo, armazen muitas casas decimais)
-    
+
     1 - para imprimir numeros int : %i ou %d
     2 - para float ou double : %f
     3 - para char: %c
@@ -70,4 +64,12 @@ int main(){
     }
 
 
-    */
+*/
+
+#include <stdio.h>
+
+int main(){
+
+    return 0;
+}
+

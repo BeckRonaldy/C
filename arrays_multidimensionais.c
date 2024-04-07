@@ -1,17 +1,15 @@
+/*
+    Matriz bi-dimenssional
+    [00][01][02]
+    [10][11][12]
+    [20][21][22]
+
+    int -> 4 bytes
+    linha-3 x coluna-3 x int-4 = 36 bytes
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-
-/*
-* Matriz bi-dimenssional
-* [00][01][02]
-* [10][11][12]
-* [20][21][22]
-*
-* int -> 4 bytes
-* linha-3 x coluna-3 x int-4 = 36 bytes
-*
-*
-*/
 
 int main(){
     int *p, linhas=3, colunas=3;

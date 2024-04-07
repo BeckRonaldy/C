@@ -1,6 +1,6 @@
-#include <stdio.h>
-
 //Enum -> Enumeração
+
+#include <stdio.h>
 
 enum dias_da_semana{
     domigo,

@@ -1,7 +1,7 @@
+//Malloc - alocação de memória
+
 #include <stdio.h>
 #include <stdlib.h>
-
-//Malloc - alocação de memória
 
 int main(){
 

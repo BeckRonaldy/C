@@ -1,13 +1,13 @@
+/*
+    Calloc - quando aloca um espaço de memória esvazia os valores desse espaço
+    não mantendo o lixo na memória, substituindo por 0
+
+    Malloc - quando aloca um espaço pode ser que contenham lixo
+    os valores só são substituidos durante a execução do programa
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
-
-/*
-Calloc - quando aloca um espaço de memória esvazia os valores desse espaço
-não mantendo o lixo na memória, substituindo por 0
-
-Malloc - quando aloca um espaço pode ser que contenham lixo
-os valores só são substituidos durante a execução do programa
-*/
 
 int main(){
 
