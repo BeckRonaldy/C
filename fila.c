@@ -54,10 +54,18 @@ void enqueue(){
 }
 
 void dequeue(){
+    int fila_aux[TAMFILA];
     if(head < tail){
         fila[head] = 0;
         head = head + 1;
-        reorganizar();
+        for (int i=0; i < TAMFILA; i++){
+            fila_aux[i] = fila[i];
+        }
+        for(int i=0; i < tail; i++){
+            fila[i] = fila_aux[head + i];
+        }
+        tail = tail - head;
+        head = 0;
         lista_elementos();
     } else{
         printf("\nA fila está vazia!\n");
@@ -71,21 +79,6 @@ void clear(){
         fila[i] = 0;
     }
     lista_elementos();
-}
-
-void reorganizar(){
-    int fila_aux[TAMFILA];
-    
-    for (int i=0; i < TAMFILA; i++){
-        fila_aux[i] = fila[i];
-    }
-
-    for(int i=0; i < tail; i++){
-        fila[i] = fila_aux[head + i];
-    }
-
-    tail = tail - head;
-    head = 0;
 }
 
 int main(){
